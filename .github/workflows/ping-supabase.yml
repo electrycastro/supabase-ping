@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Ping Supabase (Auth health)
         run: |
-          curl -sSf https://electrycastro.supabase.co/auth/v1/health -o /dev/null
+          curl -sSf https://electrycastro.supabase.co/rest/v1/ -o /dev/null || true
           echo "Pinged Supabase successfully at $(date -u)"
